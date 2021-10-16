@@ -1,0 +1,10 @@
+[package]
+name = "proto"
+version = "0.1.0"
+edition = "2018"
+build = "build.rs"
+
+[dependencies]
+protobuf = "2.25.1"
+[build-dependencies]
+protoc-rust = "2.25.1"

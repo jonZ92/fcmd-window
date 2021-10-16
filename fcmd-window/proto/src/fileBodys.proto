@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+message FileBody {
+  string  fileName = 1;
+  sint32  end = 2;
+  bytes   data = 3;
+  string  verCode = 4;
+  int32   status = 5;  // 功能值；1：conn , 2 :cd ,3:dwload  ,4: upload 5 : pass  6: close  7： exit
+  sint64  fileLength = 6;
+}
